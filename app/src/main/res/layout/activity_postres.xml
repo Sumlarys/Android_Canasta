@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pastelfondo"
+    tools:context=".Pasteleria">
+
+    <Button
+        android:id="@+id/pastelCanastaButton"
+        android:layout_width="125dp"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#57312B"
+        android:onClick="pastelToConsulta"
+        android:text="@string/irConsultaPastel"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opcionPastelRG"
+        app:layout_constraintVertical_bias="0.648" />
+
+    <ImageView
+        android:id="@+id/fresa"
+        android:layout_width="200dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="412dp"
+        android:layout_marginBottom="305dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pastelfresa" />
+
+    <ImageView
+        android:id="@+id/queso"
+        android:layout_width="209dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="412dp"
+        android:layout_marginBottom="303dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pastelqueso" />
+
+    <ImageView
+        android:id="@+id/pastelSatcher"
+        android:layout_width="205dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="481dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/zanahoria"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pastelsatcher" />
+
+    <ImageView
+        android:id="@+id/pastelTitle"
+        android:layout_width="557dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bakerylogo" />
+
+    <ImageView
+        android:id="@+id/zanahoria"
+        android:layout_width="197dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="237dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="477dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pastelzanahoria" />
+
+    <RadioGroup
+        android:id="@+id/opcionPastelRG"
+        android:layout_width="278dp"
+        android:layout_height="207dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/zanahoriaRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opcionZahoria"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/satcherRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opcionSatcher"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/fresaRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opcionFresa"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/quesoRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opcionQueso"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/pastelVolverButton"
+        android:layout_width="122dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="#562929"
+        android:onClick="pastelToCatalog"
+        android:text="@string/pastelvolver"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opcionPastelRG"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/añadirPastelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F44336"
+        android:onClick="añadirPostre"
+        android:text="@string/añadirpastel"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/pastelVolverButton"
+        app:layout_constraintTop_toBottomOf="@+id/opcionPastelRG" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

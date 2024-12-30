@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cafeteria">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tiposcafe"
+        tools:layout_editor_absoluteX="199dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="197dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/cafetitulo" />
+
+        <Button
+            android:id="@+id/volverCafeButton"
+            android:layout_width="145dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="230dp"
+            android:layout_marginBottom="48dp"
+            android:backgroundTint="#57312B"
+            android:onClick="goBackCatalog"
+            android:text="@string/volverCafe"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/irReciboCafeButton"
+            android:layout_width="145dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="232dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="48dp"
+            android:backgroundTint="#57312B"
+            android:onClick="gotoConsulta"
+            android:text="@string/irConsultaCafe"
+            android:textAlignment="center"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/añadirCafeButton"
+            android:layout_width="145dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="124dp"
+            android:layout_marginEnd="142dp"
+            android:layout_marginBottom="307dp"
+            android:backgroundTint="#57312B"
+            android:onClick="añadirCafe"
+            android:text="@string/añadirCafe"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/añadirCafeButton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="58dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton
+                android:id="@+id/cafeExpresoRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/expressoOption"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/cafeLecheRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/conLecheOption"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/cafeBombonRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bombonOption"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/cafeAmericanoRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/americanoOption"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

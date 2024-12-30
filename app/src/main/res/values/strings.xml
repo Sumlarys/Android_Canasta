@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">AplicacionPersonalizada</string>
+    <!--MainActivity-->
+    <string name="MainText">Cafetería Pastelería La Canasta</string>
+    <string name="sendButton">Siguiente</string>
+    <string name="nameField">Introduzca un nombre</string>
+    <string name="clase">2ºDAM</string>
+    <string name="miNombre">Ren Chong Min Jo</string>
+
+    <!--Catalogo-->
+    <string name="welcomeMessage">Bienvenido, %1$s! Disfrute explorando nuestro catálogo.</string>
+    <string name="category">Escoja una categoría</string>
+    <string name="goBackButton">Volver</string>
+
+    <!--Cafeteria-->
+    <string name="americanoOption">Café Americano</string>
+    <string name="conLecheOption">Café con Leche</string>
+    <string name="expressoOption">Café Expresso</string>
+    <string name="bombonOption">Café Bombón</string>
+    <string name="añadirCafe">Añadir</string>
+    <string name="volverCafe">Volver</string>
+    <string name="irConsultaCafe">Ver mi canasta</string>
+
+    <!--Pasteleria-->
+    <string name="opcionZahoria">Pastel de Zanahoria</string>
+    <string name="opcionSatcher">Pastel Satcher</string>
+    <string name="opcionFresa">Pastel de Fresa</string>
+    <string name="opcionQueso">Tarta de Queso</string>
+    <string name="pastelvolver">Volver</string>
+    <string name="añadirpastel">Añadir</string>
+    <string name="irConsultaPastel">Ver mi canasta</string>
+
+    <!--Salados-->
+    <string name="opcionSaladitos">Saladitos Variados</string>
+    <string name="opcionFlautas">Flauta</string>
+    <string name="opcionTostada">Tostada</string>
+    <string name="opcionTapa">Tapas Variadas</string>
+    <string name="saladosvolver">Volver</string>
+    <string name="añadirsalados">Añadir</string>
+    <string name="irConsultaSalado">Ver mi canasta</string>
+
+    <!--Consulta-->
+    <string name="consultaTitle">Lista de Productos</string>
+    <string name="consultaList">Placeholder de tu futura lista de productos!</string>
+    <string name="consultaVolver">Volver</string>
+    <string name="consultaDelete">Eliminar</string>
+</resources>
